@@ -8,7 +8,9 @@ ADD . /home/app
 #指定运行目录
 WORKDIR /home/app
 #使用NPM更新依赖
-RUN npm outdated
+#RUN npm outdated
+#使用yarn更新依赖
+RUN yarn upgrade --latest
 #忽略错误
 RUN yarn config set ignore-engines true
 #安装依赖
