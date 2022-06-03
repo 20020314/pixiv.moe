@@ -1,5 +1,8 @@
+# 通用模板 -茗
 #指定Node版本
-FROM node:16.15.0
+FROM node:18.2.0
+#设置API路径
+ENV PIXIV_API_ENTRY /api
 #复制项目
 ADD . /home/app
 #指定运行目录
